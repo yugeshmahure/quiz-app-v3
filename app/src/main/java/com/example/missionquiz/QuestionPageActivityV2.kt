@@ -11,8 +11,9 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.core.content.ContextCompat
 import kotlinx.android.synthetic.main.activity_question_page.*
+import org.w3c.dom.Text
 
-class QuestionPageActivity : AppCompatActivity(), View.OnClickListener {
+class QuestionPageActivityV2 : AppCompatActivity(), View.OnClickListener {
 
     private var mCurrentPosition: Int = 1
     private var mQuestionList: ArrayList<Questions>? = null
@@ -76,7 +77,15 @@ class QuestionPageActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     override fun onClick(v: View?) {
-when(v?.id) {
+        val question = mQuestionList?.get(mCurrentPosition - 1)
+        selectedOptionView(v as TextView, selectedOptionNum = 1)
+        if(question!!.correctAnswer != mSelectedOption) {
+            answerView(mSelectedOption, R.drawable.wrong_option_border_bg)
+        }
+        answerView(question!!.correctAnswer, R.drawable.correct_option_border_bg)
+
+/*
+        when(v?.id) {
     R.id.option_1 -> {
         selectedOptionView(option_1,1)
     }
@@ -124,8 +133,9 @@ when(v?.id) {
             }
             mSelectedOption = 0;
         }
-    }
-}    }
+    }*/
+//}
+}
 
     private fun answerView(answer: Int, drawableView: Int) {
         when(answer) {
