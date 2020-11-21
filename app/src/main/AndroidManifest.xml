@@ -17,6 +17,10 @@
             android:name=".QuestionPageActivity"
             android:screenOrientation="portrait"></activity>
         <activity
+            android:name=".QuestionPageActivityV2"
+            android:theme="@style/NoActionBarTheme">
+        android:screenOrientation="portrait"></activity>
+        <activity
             android:name=".MainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/NoActionBarTheme"
