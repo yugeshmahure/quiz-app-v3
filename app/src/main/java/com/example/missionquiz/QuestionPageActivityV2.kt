@@ -6,6 +6,7 @@ import android.graphics.Typeface
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.CountDownTimer
+import android.util.Log
 import android.view.View
 import android.widget.TextView
 import androidx.core.content.ContextCompat
@@ -33,13 +34,10 @@ class QuestionPageActivityV2 : AppCompatActivity(), View.OnClickListener {
         option_2.setOnClickListener(this)
         option_3.setOnClickListener(this)
         option_4.setOnClickListener(this)
-//        submit_button.setOnClickListener(this)
     }
 
     private fun setQuestions() {
         val question =  mQuestionList!![mCurrentPosition - 1]
-
-        //defaultOptionsView()
 
         progress_bar.progress = mCurrentPosition
         progress_bar_text.text = "$mCurrentPosition" + "/" + progress_bar.max
@@ -50,13 +48,14 @@ class QuestionPageActivityV2 : AppCompatActivity(), View.OnClickListener {
         option_2.text = question.option2
         option_3.text = question.option3
         option_4.text = question.option4
-        object : CountDownTimer(10000, 1000) {
+        object : CountDownTimer(5000, 1000) {
             var counter = 0
             override fun onTick(millisUntilFinished: Long) {
-                timer_shape.text = (10 - counter).toString()
+                timer_shape.text = (5 - counter).toString()
                 counter++
             }
             override fun onFinish() {
+                mCurrentPosition++
                 if(mCurrentPosition <= mQuestionList!!.size){
                     setQuestions()
                 }
@@ -68,11 +67,9 @@ class QuestionPageActivityV2 : AppCompatActivity(), View.OnClickListener {
                     startActivity(intent)
                     finish()
                 }
-
             }
         }.start()
         defaultOptionsView()
-        mCurrentPosition++
     }
     private fun defaultOptionsView() {
         val options = ArrayList<TextView>()
@@ -91,6 +88,7 @@ class QuestionPageActivityV2 : AppCompatActivity(), View.OnClickListener {
     }
 
     override fun onClick(v: View?) {
+        Log.e("Nadal On Click","$mCurrentPosition")
         when (v?.id) {
             R.id.option_1 -> {
                 mSelectedOption = 1
@@ -106,7 +104,6 @@ class QuestionPageActivityV2 : AppCompatActivity(), View.OnClickListener {
             }
         }
         val question = mQuestionList?.get(mCurrentPosition - 1)
-        //selectedOptionView(v as TextView, mSelectedOption)
         if (question!!.correctAnswer != mSelectedOption) {
             answerView(mSelectedOption, R.drawable.wrong_option_border_bg)
         }
@@ -114,32 +111,7 @@ class QuestionPageActivityV2 : AppCompatActivity(), View.OnClickListener {
             mCorrectAnswers++
         }
         answerView(question!!.correctAnswer, R.drawable.correct_option_border_bg)
-       /* if(mCurrentPosition <= mQuestionList!!.size) {
-            setQuestions()
-        }*/
-       /* else {
-            val intent = Intent(this, ResultsPage::class.java)
-            intent.putExtra(Constants.USER_NAME, mUserName)
-            intent.putExtra(Constants.CORRECT_ANSWERS, mCorrectAnswers)
-            intent.putExtra(Constants.TOTAL_QUESTIONS, mQuestionList!!.size)
-            startActivity(intent)
-            finish()
-        }
-    */}
-
-fun setNextQuestion() {
-    var counter = 0
-    object : CountDownTimer(5000, 1000) {
-        override fun onTick(millisUntilFinished: Long) {
-            timer_shape.text = (10 - counter).toString()
-            counter++
-        }
-        override fun onFinish() {
-            setQuestions()
-            defaultOptionsView()
-        }
-    }.start()
-}
+      }
 
     private fun answerView(answer: Int, drawableView: Int) {
         when(answer) {

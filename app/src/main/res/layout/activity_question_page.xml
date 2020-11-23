@@ -5,126 +5,148 @@
     android:layout_height="match_parent"
     android:fillViewport="true"
     tools:context=".QuestionPageActivity">
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:weightSum="10"
         android:gravity="center"
+        android:orientation="vertical"
         android:padding="16dp">
-
-        <TextView
-            android:id="@+id/timer_shape"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:gravity="center"
-            android:background="@drawable/timer_shape_bg"
-            android:textColor="#3634A3"
-            android:textSize="22sp"
-            android:text="This is a dummy question">
-        </TextView>
-
-        <TextView
-            android:id="@+id/question_text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            android:gravity="center"
-            android:textColor="#3634A3"
-            android:textSize="22sp"
-            android:text="This is a dummy question">
-        </TextView>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/timer_shape"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/timer_shape_bg"
+                android:gravity="center"
+                android:text="This is a dummy question"
+                android:textColor="#3634A3"
+                android:textSize="22sp"/>
+
+            <TextView
+                android:id="@+id/question_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:text="This is a dummy question"
+                android:textColor="#3634A3"
+                android:textSize="22sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:layout_marginTop="16dp"
             android:gravity="center_vertical"
-            android:layout_marginTop="16dp">
+            android:orientation="horizontal">
+
             <ProgressBar
                 android:id="@+id/progress_bar"
+                style="?android:attr/progressBarStyleHorizontal"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:indeterminate="false"
                 android:max="10"
                 android:minHeight="500dp"
-                android:progress="0"
-                style="?android:attr/progressBarStyleHorizontal"
-                android:indeterminate="false">
-            </ProgressBar>
+                android:progress="0"/>
+
             <TextView
                 android:id="@+id/progress_bar_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:padding="15dp"
-                android:textColorHint= "#7A8089"
+                android:text="This is a dummy question"
+                android:textColorHint="#7A8089"
                 android:textSize="22sp"
-                tools:text = "0/10"
-                android:text="This is a dummy question">
-            </TextView>
+                tools:text="0/10"/>
         </LinearLayout>
-        <TextView
-            android:id="@+id/option_1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/default_option_border_bg"
-            android:layout_margin="10dp"
-            android:gravity="center"
-            android:padding="15dp"
-            android:textSize="18sp"
-            android:textColor="#7A8089"
-            android:text="Apple">
-        </TextView>
-        <TextView
-            android:id="@+id/option_2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/default_option_border_bg"
-            android:layout_margin="10dp"
-            android:gravity="center"
-            android:padding="15dp"
-            android:textSize="18sp"
-            android:textColor="#7A8089"
-            android:text="Lemon">
-        </TextView>
-        <TextView
-            android:id="@+id/option_3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/default_option_border_bg"
-            android:layout_margin="10dp"
-            android:gravity="center"
-            android:padding="15dp"
-            android:textSize="18sp"
-            android:textColor="#7A8089"
-            android:text="Orange">
-        </TextView>
-        <TextView
-            android:id="@+id/option_4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/default_option_border_bg"
-            android:layout_margin="10dp"
-            android:gravity="center"
-            android:padding="15dp"
-            android:textSize="18sp"
-            android:textColor="#7A8089"
-            android:text="Mango">
-        </TextView>
 
-        <TextView
-            android:id="@+id/submit_button"
-            android:layout_width="1dp"
-            android:layout_height="1dp"
-            android:background="@drawable/default_option_border_bg"
-            android:layout_margin="10dp"
-            android:gravity="center"
-            android:padding="1dp"
-            android:textSize="1sp"
-            android:textColor="#7A8089"
-            android:text="Mango">
-        </TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
 
+            <TextView
+                android:id="@+id/option_1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:background="@drawable/default_option_border_bg"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="Apple"
+                android:textColor="#7A8089"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/option_2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:background="@drawable/default_option_border_bg"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="Lemon"
+                android:textColor="#7A8089"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/option_3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:background="@drawable/default_option_border_bg"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="Orange"
+                android:textColor="#7A8089"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/option_4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:background="@drawable/default_option_border_bg"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="Mango"
+                android:textColor="#7A8089"
+                android:textSize="18sp"/>
+
+            <!--        <TextView-->
+            <!--            android:id="@+id/submit_button"-->
+            <!--            android:layout_width="1dp"-->
+            <!--            android:layout_height="1dp"-->
+            <!--            android:background="@drawable/default_option_border_bg"-->
+            <!--            android:layout_margin="10dp"-->
+            <!--            android:gravity="center"-->
+            <!--            android:padding="1dp"-->
+            <!--            android:textSize="1sp"-->
+            <!--            android:textColor="#7A8089"-->
+            <!--            android:text="Mango">-->
+            <!--        </TextView>-->
+        </LinearLayout>
     </LinearLayout>
 
 </ScrollView>

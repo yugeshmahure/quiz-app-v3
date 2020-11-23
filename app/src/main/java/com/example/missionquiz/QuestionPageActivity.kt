@@ -12,7 +12,7 @@ import android.widget.Toast
 import androidx.core.content.ContextCompat
 import kotlinx.android.synthetic.main.activity_question_page.*
 
-class QuestionPageActivity : AppCompatActivity(), View.OnClickListener {
+class QuestionPageActivity : AppCompatActivity() {
 
     private var mCurrentPosition: Int = 1
     private var mQuestionList: ArrayList<Questions>? = null
@@ -27,16 +27,16 @@ class QuestionPageActivity : AppCompatActivity(), View.OnClickListener {
         mUserName = intent.getStringExtra(Constants.USER_NAME)
         mQuestionList = Constants.getQuestions()
 
-        setQuestions()
+        //setQuestions()
 
-        option_1.setOnClickListener(this)
+       /* option_1.setOnClickListener(this)
         option_2.setOnClickListener(this)
         option_3.setOnClickListener(this)
-        option_4.setOnClickListener(this)
-        submit_button.setOnClickListener(this)
+        option_4.setOnClickListener(this)*/
+        //submit_button.setOnClickListener(this)
     }
 
-    private fun setQuestions() {
+    /*private fun setQuestions() {
         val question =  mQuestionList!![mCurrentPosition - 1]
 
         defaultOptionsView()
@@ -164,5 +164,5 @@ when(v?.id) {
         tv.setTypeface(tv.typeface, Typeface.BOLD)
         tv.setTextColor(Color.parseColor("#363A43"))
         tv.background = ContextCompat.getDrawable(this,R.drawable.selected_option_border)
-    }
+    }*/
 }
