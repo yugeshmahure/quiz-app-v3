@@ -19,7 +19,6 @@ class QuestionPageActivityV2 : AppCompatActivity(), View.OnClickListener {
     private var mSelectedOption: Int = 0
     private var mCorrectAnswers: Int = 0
     private var mUserName: String? = null
-    private var optionSelectedFlag : Boolean = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

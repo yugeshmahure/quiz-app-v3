@@ -6,13 +6,13 @@ import android.os.Bundle
 import android.view.View
 import kotlinx.android.synthetic.main.activity_select_quiz_topic.*
 
-class selectQuizTopicActivity : AppCompatActivity(), View.OnClickListener {
+class cricket_topics_page : AppCompatActivity(), View.OnClickListener {
 
     var mUserName: String? = null;
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_select_quiz_topic)
+        setContentView(R.layout.activity_cricket_topics_page)
 
         mUserName = intent.getStringExtra(Constants.USER_NAME)
 
@@ -26,13 +26,12 @@ class selectQuizTopicActivity : AppCompatActivity(), View.OnClickListener {
         card_08.setOnClickListener(this)
     }
 
-    override fun onClick(v: View?) {
-        val intent = Intent(this, cricket_topics_page::class.java)
+    override fun onClick(v:View?) {
+        val intent = Intent(this, QuestionPageActivityV2::class.java)
         intent.putExtra(Constants.USER_NAME, mUserName)
-        when (v?.id) {
-            R.id.card_01 -> if (card_01.text.equals("CRICKET")) {
-                startActivity(intent)
-            }
+        when(v?.id) {
+            R.id.card_01 ->
+                startActivity(Intent(this, QuestionPageActivityV2::class.java))
         }
     }
 }

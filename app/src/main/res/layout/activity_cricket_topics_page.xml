@@ -13,13 +13,12 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:layout_marginTop="80dp"
-        android:layout_marginBottom="10dp"
         android:orientation="horizontal"
         android:weightSum="2">
 
         <androidx.cardview.widget.CardView
             android:layout_width="0dp"
-            android:layout_height="80dp"
+            android:layout_height="100dp"
             android:layout_gravity="center"
             app:cardCornerRadius="20dp"
             android:background="@drawable/back_cricket_img"
@@ -30,23 +29,23 @@
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:gravity="center">
-            <TextView
-                android:id="@+id/card_01"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:textAlignment="center"
-                android:textColor="@android:color/black"
-                android:text="CRICKET"
-                android:textSize="30sp"
-                android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/card_01"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:text="TESTS"
+                    android:textSize="30sp"
+                    android:textStyle="bold"/>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
             android:id="@+id/card_02"
             android:layout_width="0dp"
-            android:layout_height="80dp"
+            android:layout_height="100dp"
             android:layout_margin="8dp"
             android:background="@drawable/back_cricket_img"
             app:cardCornerRadius="20dp"
@@ -56,14 +55,14 @@
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:gravity="center">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="TENNIS"
-                android:textColor="@android:color/black"
-                android:textSize="30sp"
-                android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="ODIs"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    android:textStyle="bold"/>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
     </LinearLayout>
@@ -72,7 +71,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:layout_marginBottom="10dp"
         android:gravity="center"
         android:orientation="horizontal"
         android:weightSum="2">
@@ -80,7 +78,7 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/card_03"
             android:layout_width="0dp"
-            android:layout_height="80dp"
+            android:layout_height="100dp"
             android:layout_gravity="center"
             app:cardCornerRadius="20dp"
             android:background="@drawable/back_cricket_img"
@@ -97,7 +95,7 @@
                     android:gravity="center"
                     android:textAlignment="center"
                     android:textColor="@android:color/black"
-                    android:text="CRICKET"
+                    android:text="T20"
                     android:textSize="30sp"
                     android:textStyle="bold"/>
             </LinearLayout>
@@ -106,7 +104,7 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/card_04"
             android:layout_width="0dp"
-            android:layout_height="80dp"
+            android:layout_height="100dp"
             android:layout_margin="8dp"
             android:background="@drawable/back_cricket_img"
             app:cardCornerRadius="20dp"
@@ -120,7 +118,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="TENNIS"
+                    android:text="MISCELLANEOUS"
                     android:textColor="@android:color/black"
                     android:textSize="30sp"
                     android:textStyle="bold"/>
@@ -133,13 +131,12 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:layout_marginTop="20dp"
-        android:layout_marginBottom="10dp"
         android:orientation="horizontal"
         android:weightSum="2">
 
         <androidx.cardview.widget.CardView
             android:layout_width="0dp"
-            android:layout_height="80dp"
+            android:layout_height="100dp"
             android:layout_gravity="center"
             app:cardCornerRadius="20dp"
             android:background="@drawable/back_cricket_img"
@@ -156,7 +153,7 @@
                     android:gravity="center"
                     android:textAlignment="center"
                     android:textColor="@android:color/black"
-                    android:text="CRICKET"
+                    android:text="VENUES"
                     android:textSize="30sp"
                     android:textStyle="bold"/>
             </LinearLayout>
@@ -164,7 +161,7 @@
 
         <androidx.cardview.widget.CardView
             android:layout_width="0dp"
-            android:layout_height="80dp"
+            android:layout_height="100dp"
             android:layout_margin="8dp"
             android:background="@drawable/back_cricket_img"
             app:cardCornerRadius="20dp"
@@ -178,7 +175,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="TENNIS"
+                    android:text="BATTING"
                     android:textColor="@android:color/black"
                     android:textSize="30sp"
                     android:textStyle="bold"/>
@@ -191,14 +188,13 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:layout_marginTop="20dp"
-        android:layout_marginBottom="10dp"
         android:orientation="horizontal"
         android:weightSum="2">
 
         <androidx.cardview.widget.CardView
             android:id="@+id/card_05"
             android:layout_width="0dp"
-            android:layout_height="80dp"
+            android:layout_height="100dp"
             android:layout_gravity="center"
             app:cardCornerRadius="20dp"
             android:background="@drawable/back_cricket_img"
@@ -215,7 +211,7 @@
                     android:gravity="center"
                     android:textAlignment="center"
                     android:textColor="@android:color/black"
-                    android:text="CRICKET"
+                    android:text="BOWLING"
                     android:textSize="30sp"
                     android:textStyle="bold"/>
             </LinearLayout>
@@ -224,7 +220,7 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/card_06"
             android:layout_width="0dp"
-            android:layout_height="80dp"
+            android:layout_height="100dp"
             android:layout_margin="8dp"
             android:background="@drawable/back_cricket_img"
             app:cardCornerRadius="20dp"
@@ -238,7 +234,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="TENNIS"
+                    android:text="DOMESTIC"
                     android:textColor="@android:color/black"
                     android:textSize="30sp"
                     android:textStyle="bold"/>
@@ -251,14 +247,13 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp"
         android:orientation="horizontal"
         android:weightSum="2">
 
         <androidx.cardview.widget.CardView
             android:id="@+id/card_07"
             android:layout_width="0dp"
-            android:layout_height="80dp"
+            android:layout_height="100dp"
             android:layout_gravity="center"
             app:cardCornerRadius="20dp"
             android:background="@drawable/back_cricket_img"
@@ -284,7 +279,7 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/card_08"
             android:layout_width="0dp"
-            android:layout_height="80dp"
+            android:layout_height="100dp"
             android:layout_margin="8dp"
             android:background="@drawable/back_cricket_img"
             app:cardCornerRadius="20dp"
