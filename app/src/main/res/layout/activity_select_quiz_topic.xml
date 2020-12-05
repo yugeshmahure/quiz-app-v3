@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@drawable/back_img"
+    android:background="@drawable/back_cricket_img"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".selectQuizTopicActivity">
@@ -22,13 +22,13 @@
             android:layout_height="80dp"
             android:layout_gravity="center"
             app:cardCornerRadius="20dp"
-            android:background="@drawable/back_cricket_img"
             android:layout_margin="8dp"
             android:layout_weight="1">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
+                android:background="@drawable/cricket_options_view"
                 android:gravity="center">
             <TextView
                 android:id="@+id/card_01"
@@ -36,7 +36,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:textAlignment="center"
-                android:textColor="@android:color/black"
+                android:textColor="@android:color/white"
                 android:text="CRICKET"
                 android:textSize="30sp"
                 android:textStyle="bold"/>
@@ -55,13 +55,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
+                android:background="@drawable/cricket_options_view"
                 android:gravity="center">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="TENNIS"
-                android:textColor="@android:color/black"
+                android:textColor="@android:color/white"
                 android:textSize="30sp"
                 android:textStyle="bold"/>
             </LinearLayout>
@@ -90,13 +91,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
+                android:background="@drawable/cricket_options_view"
                 android:gravity="center">
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:textAlignment="center"
-                    android:textColor="@android:color/black"
+                    android:textColor="@android:color/white"
                     android:text="CRICKET"
                     android:textSize="30sp"
                     android:textStyle="bold"/>
@@ -115,71 +117,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
+                android:background="@drawable/cricket_options_view"
                 android:gravity="center">
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:text="TENNIS"
-                    android:textColor="@android:color/black"
-                    android:textSize="30sp"
-                    android:textStyle="bold"/>
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="10dp"
-        android:orientation="horizontal"
-        android:weightSum="2">
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="0dp"
-            android:layout_height="80dp"
-            android:layout_gravity="center"
-            app:cardCornerRadius="20dp"
-            android:background="@drawable/back_cricket_img"
-            android:layout_margin="8dp"
-            android:layout_weight="1">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:gravity="center">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:textAlignment="center"
-                    android:textColor="@android:color/black"
-                    android:text="CRICKET"
-                    android:textSize="30sp"
-                    android:textStyle="bold"/>
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="0dp"
-            android:layout_height="80dp"
-            android:layout_margin="8dp"
-            android:background="@drawable/back_cricket_img"
-            app:cardCornerRadius="20dp"
-            android:layout_weight="1">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:gravity="center">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:text="TENNIS"
-                    android:textColor="@android:color/black"
+                    android:textColor="@android:color/white"
                     android:textSize="30sp"
                     android:textStyle="bold"/>
             </LinearLayout>
@@ -208,13 +153,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
+                android:background="@drawable/cricket_options_view"
                 android:gravity="center">
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:textAlignment="center"
-                    android:textColor="@android:color/black"
+                    android:textColor="@android:color/white"
                     android:text="CRICKET"
                     android:textSize="30sp"
                     android:textStyle="bold"/>
@@ -233,13 +179,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
+                android:background="@drawable/cricket_options_view"
                 android:gravity="center">
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:text="TENNIS"
-                    android:textColor="@android:color/black"
+                    android:textColor="@android:color/white"
                     android:textSize="30sp"
                     android:textStyle="bold"/>
             </LinearLayout>
@@ -251,7 +198,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="10dp"
         android:orientation="horizontal"
         android:weightSum="2">
 
@@ -268,13 +215,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
+                android:background="@drawable/cricket_options_view"
                 android:gravity="center">
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:textAlignment="center"
-                    android:textColor="@android:color/black"
+                    android:textColor="@android:color/white"
                     android:text="CRICKET"
                     android:textSize="30sp"
                     android:textStyle="bold"/>
@@ -293,13 +241,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
+                android:background="@drawable/cricket_options_view"
                 android:gravity="center">
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:text="TENNIS"
-                    android:textColor="@android:color/black"
+                    android:textColor="@android:color/white"
                     android:textSize="30sp"
                     android:textStyle="bold"/>
             </LinearLayout>

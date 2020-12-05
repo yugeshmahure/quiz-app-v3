@@ -4,7 +4,14 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import kotlinx.android.synthetic.main.activity_select_quiz_topic.*
+import kotlinx.android.synthetic.main.activity_select_quiz_topic.card_01
+import kotlinx.android.synthetic.main.activity_select_quiz_topic.card_02
+import kotlinx.android.synthetic.main.activity_select_quiz_topic.card_03
+import kotlinx.android.synthetic.main.activity_select_quiz_topic.card_04
+import kotlinx.android.synthetic.main.activity_select_quiz_topic.card_05
+import kotlinx.android.synthetic.main.activity_select_quiz_topic.card_06
+import kotlinx.android.synthetic.main.activity_select_quiz_topic.card_07
+import kotlinx.android.synthetic.main.activity_select_quiz_topic.card_08
 
 class selectQuizTopicActivity : AppCompatActivity(), View.OnClickListener {
 
