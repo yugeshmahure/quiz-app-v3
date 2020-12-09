@@ -22,7 +22,6 @@
             android:layout_height="80dp"
             android:layout_gravity="center"
             app:cardCornerRadius="20dp"
-            android:background="@drawable/back_cricket_img"
             android:layout_margin="8dp"
             android:layout_weight="1">
             <LinearLayout

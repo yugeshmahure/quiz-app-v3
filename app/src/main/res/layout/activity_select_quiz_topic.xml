@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="40dp"
         android:layout_marginBottom="10dp"
         android:orientation="horizontal"
         android:weightSum="2">
@@ -22,7 +22,7 @@
             android:layout_height="80dp"
             android:layout_gravity="center"
             app:cardCornerRadius="20dp"
-            android:layout_margin="8dp"
+            android:layout_margin="1dp"
             android:layout_weight="1">
             <LinearLayout
                 android:layout_width="match_parent"
